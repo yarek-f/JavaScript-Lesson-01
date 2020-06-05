@@ -1,23 +1,22 @@
 'use strict'
 
 let login = 'Admin';
+let password = 'TheMaster';
 
-switch(login){
-	case 'Admin': {
-		console.log('Please enter your password');
-		break;
-	}
-	default: 
-		console.log("I don't know you");
-}
+switch (login) {
+case 'Admin': {
+	console.log('Please enter your password');
 
-let password = 'TheMastera';
-
-switch(password){
+	switch (password) {
 	case 'TheMaster': {
 		console.log('Welcome!');
 		break;
 	}
-	default: 
-		console.log("Wrong password'");
+	default:
+		console.log("Wrong password");
+	}
+	break;
+}
+default:
+	console.log("I don't know you");
 }
